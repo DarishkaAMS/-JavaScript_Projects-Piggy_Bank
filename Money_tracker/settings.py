@@ -75,8 +75,11 @@ WSGI_APPLICATION = 'Money_tracker.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'piggy_bank_db',
+        'USER': 'postgres',
+        'PASSWORD': 'dummy_password',
+        'HOST': 'localhost',
     }
 }
 
